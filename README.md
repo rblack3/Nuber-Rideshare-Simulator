@@ -2,7 +2,7 @@
 Welcome to the Nüber! In this company, we operate a ride-sharing service in New York City, where 
 passengers request rides through a mobile app, and drivers sign into the app whenever they're available to drive.
 
-So far NU has been subcontracting to another taxi dispatcher to make real-time assignments of
+So far Nüber has been subcontracting to another taxi dispatcher to make real-time assignments of
 drivers to passengers. This project designs the next generation algorithmic system for automating these decisions.
 
 ### Problem Formulation
