@@ -16,6 +16,7 @@ A matching algorithm can make a decision whenever an event happens, at which poi
 wait (do nothing) or assign an unmatched driver to an unmatched passenger. Once a driver is
 matched to a passenger, the driver travels to the passenger pickup location and then to their drop-off location. 
 The events that can change the state of the world and result in a match opportunity for the algorithm include:
+
 • New unmatched passengers may appear (along with a pickup and desired drop-off location).
 • New unmatched drivers may appear, along with a current location, in two ways.
 • A brand new driver may appear at an arbitrary location,
@@ -29,6 +30,7 @@ few hours before exiting.
 ### Desiderata
 The algorithm will balance three fundamental desiderata (desirable properties) listed
 below as D1-D3.
+
 • D1. Passengers want to be dropped off as soon as possible, that is, to minimize the amount
 of time (in minutes) between when they appear as an unmatched passenger, and when they
 are dropped off at their destination.
@@ -40,6 +42,7 @@ idle.
 
 ### Constraints
 The algorithm will also optimize the algorithm with the following constraints C1-C3.
+
 • C1. A driver can only have one passenger onboard at any given time.
 • C2. Passengers can only be picked up or dropped off at their requested pickup and drop-off
 locations.
