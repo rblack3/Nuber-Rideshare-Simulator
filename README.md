@@ -20,6 +20,7 @@ The events that can change the state of the world and result in a match opportun
 • New unmatched passengers may appear (along with a pickup and desired drop-off location).
 
 • New unmatched drivers may appear, along with a current location, in two ways.
+
 • A brand new driver may appear at an arbitrary location.
 
 • Or, a matched driver with passenger may arrive at the drop-off location. The passenger
