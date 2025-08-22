@@ -18,12 +18,16 @@ matched to a passenger, the driver travels to the passenger pickup location and 
 The events that can change the state of the world and result in a match opportunity for the algorithm include:
 
 • New unmatched passengers may appear (along with a pickup and desired drop-off location).
+
 • New unmatched drivers may appear, along with a current location, in two ways.
-• A brand new driver may appear at an arbitrary location,
+• A brand new driver may appear at an arbitrary location.
+
 • Or, a matched driver with passenger may arrive at the drop-off location. The passenger
 then exits. With some probability, the driver may also exit and no event takes place.
+
 •Otherwise, the driver becomes a new unmatched driver at their current location (note
 this was the drop-off location of the passenger who just exited).
+
 • Imagine that most drivers will typically want to finish several rides over a period of a
 few hours before exiting.
 
@@ -34,18 +38,22 @@ below as D1-D3.
 • D1. Passengers want to be dropped off as soon as possible, that is, to minimize the amount
 of time (in minutes) between when they appear as an unmatched passenger, and when they
 are dropped off at their destination.
+
 • D2. Drivers want to maximize ride profit, defined as the number of minutes they spend
 driving passengers from pickup to drop-off locations minus the number of minutes they spend
 driving to pickup passengers. For simplicity, there is no penalty for the time when a driver is
 idle.
+
 • D3. The algorithm will be empirically efficient and scalable.
 
 ### Constraints
 The algorithm will also optimize the algorithm with the following constraints C1-C3.
 
 • C1. A driver can only have one passenger onboard at any given time.
+
 • C2. Passengers can only be picked up or dropped off at their requested pickup and drop-off
 locations.
+
 • C3. Once you assign a driver to a passenger, that match continues until the passenger is
 dropped off at their correct location - matches made by your algorithm cannot be canceled.
 
