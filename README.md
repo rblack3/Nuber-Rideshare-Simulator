@@ -98,5 +98,7 @@ which is more efficient than Dijkstra's, which was used in T1-T3.
 
 ### T5
 We utilized the same algorithm as in T4 with one key difference:
+
 We incorporated the Haversine distance instead of a Euclidean measurement for closest node.
+
 This makes more accurate measurements since we are given location data via latitude/longitude on a sphere.
