@@ -88,8 +88,15 @@ to traverse the network to the passenger pickup location.
 ### T4
 Further improved runtime efficiency while maintaining the same general scheduling strategy as in T3. 
 This was done using two optimizations:
+
 (i) Preprocessed the nodes of the road network to efficiently
 find the closest (in terms of straight-line distance) node to a given query point (at least
 approximately). 
+
 (ii) Computed shortest paths between two nodes of the road network using an A* heuristic,
 which is more efficient than Dijkstra's, which was used in T1-T3.
+
+### T5
+We utilized the same algorithm as in T4 with one key difference:
+We incorporated the Haversine distance instead of a Euclidean measurement for closest node.
+This makes more accurate measurements since we are given location data via latitude/longitude on a sphere.
