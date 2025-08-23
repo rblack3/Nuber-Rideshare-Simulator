@@ -1,5 +1,6 @@
 ### Introduction
 [Presentation](https://docs.google.com/presentation/d/1dbEzKpWfEjPCqIGBoUCU7w2_VifLeBmFfyqBHKgM__c/edit?usp=sharing)
+
 Welcome to the Nüber! In this company, we operate a ride-sharing service in New York City, where 
 passengers request rides through a mobile app, and drivers sign into the app whenever they're available to drive.
 
